@@ -1,0 +1,42 @@
+[
+  {
+    "module": "Rooms",
+    "status": "ERROR",
+    "error": "oMLX API error: 507 Insufficient Storage"
+  },
+  {
+    "module": "Guests",
+    "status": "ERROR",
+    "error": "oMLX API error: 507 Insufficient Storage"
+  },
+  {
+    "module": "Rent Details",
+    "status": "ERROR",
+    "error": "oMLX API error: 507 Insufficient Storage"
+  },
+  {
+    "module": "Electricity",
+    "status": "ERROR",
+    "error": "terminated"
+  },
+  {
+    "module": "Billing",
+    "status": "ERROR",
+    "error": "fetch failed"
+  },
+  {
+    "module": "Maintenance",
+    "status": "ERROR",
+    "error": "fetch failed"
+  },
+  {
+    "module": "Laundry",
+    "status": "ERROR",
+    "error": "fetch failed"
+  },
+  {
+    "module": "Audit Log",
+    "status": "ERROR",
+    "error": "fetch failed"
+  }
+]

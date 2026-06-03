@@ -1,0 +1,97 @@
+{
+  "module": "Rent Details",
+  "route": "/rent-details",
+  "testCases": [
+    {
+      "id": "HP-RENT-DETAILS-01",
+      "title": "Page loads successfully with rent records",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee"
+      ],
+      "steps": [
+        "Navigate to /rent-details",
+        "Verify page title displays 'Rent Details'"
+      ],
+      "expectedResult": "Page loads without errors and displays the rent details dashboard"
+    },
+    {
+      "id": "HP-RENT-DETAILS-02",
+      "title": "Rent records display with correct room and payment information",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "At least 3 rooms exist with rent records"
+      ],
+      "steps": [
+        "Navigate to /rent-details",
+        "Verify each row displays room number, tenant name, monthly rent amount, payment status, and due date"
+      ],
+      "expectedResult": "All rent records are visible with accurate data for each field"
+    },
+    {
+      "id": "HP-RENT-DETAILS-03",
+      "title": "Pagination works correctly with multiple pages",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "More than 10 rent records exist"
+      ],
+      "steps": [
+        "Navigate to /rent-details",
+        "Verify default page shows 10 records per page",
+        "Click 'Next' page",
+        "Verify page number indicator updates and next set of records displays"
+      ],
+      "expectedResult": "Pagination controls work and records change correctly across pages"
+    },
+    {
+      "id": "HP-RENT-DETAILS-04",
+      "title": "Filter by payment status updates displayed records",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Records exist with 'Paid', 'Pending', and 'Overdue' statuses"
+      ],
+      "steps": [
+        "Navigate to /rent-details",
+        "Click the payment status filter dropdown",
+        "Select 'Pending'",
+        "Verify only pending records are displayed"
+      ],
+      "expectedResult": "Filter applies and shows only records matching the selected payment status"
+    },
+    {
+      "id": "HP-RENT-DETAILS-05",
+      "title": "Empty state displays when no rent records exist",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "No rent records exist in the system"
+      ],
+      "steps": [
+        "Navigate to /rent-details",
+        "Verify main content area shows empty state message"
+      ],
+      "expectedResult": "Empty state displays a friendly message indicating no rent records found"
+    },
+    {
+      "id": "EG-RENT-DETAILS-06",
+      "title": "Unauthorized access redirects to login page",
+      "type": "edge-case",
+      "priority": "high",
+      "preconditions": [
+        "User is not logged in"
+      ],
+      "steps": [
+        "Attempt to navigate directly to /rent-details"
+      ],
+      "expectedResult": "User is redirected to /auth login page and cannot access rent details without authentication"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "module": "Maintenance",
+  "route": "/maintenance",
+  "testCases": [
+    {
+      "id": "HP-MAINTENANCE-01",
+      "title": "Verify maintenance page loads successfully after login",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in via /auth with valid email and password"
+      ],
+      "steps": [
+        "Navigate to /maintenance",
+        "Verify page title is 'Maintenance'",
+        "Verify URL is /maintenance",
+        "Verify header displays maintenance-related navigation options"
+      ],
+      "expectedResult": "Page loads without errors, header is visible, and URL matches /maintenance"
+    },
+    {
+      "id": "HP-MAINTENANCE-02",
+      "title": "Verify maintenance requests and expenses data is displayed correctly",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in",
+        "Maintenance requests exist in the system"
+      ],
+      "steps": [
+        "Navigate to /maintenance",
+        "Verify maintenance requests table or list is displayed",
+        "Verify each request shows: request ID, room number, description, status, and expense amount",
+        "Verify status filter dropdown displays options (e.g., Open, In Progress, Closed)",
+        "Verify total expenses summary is displayed"
+      ],
+      "expectedResult": "All existing maintenance requests are visible with accurate details, status filters work, and total expenses are calculated correctly"
+    },
+    {
+      "id": "HP-MAINTENANCE-03",
+      "title": "Verify navigation from maintenance page to room details",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "Maintenance requests are associated with rooms"
+      ],
+      "steps": [
+        "Navigate to /maintenance",
+        "Click on a room number link in a maintenance request row",
+        "Verify redirect to room details page",
+        "Verify maintenance issues for that specific room are highlighted or filtered"
+      ],
+      "expectedResult": "User is redirected to the correct room details page and maintenance issues for that room are visible"
+    },
+    {
+      "id": "HP-MAINTENANCE-04",
+      "title": "Verify creating a new maintenance request",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in"
+      ],
+      "steps": [
+        "Navigate to /maintenance",
+        "Click 'New Request' or 'Add Maintenance' button",
+        "Select a room from dropdown",
+        "Enter description of maintenance issue",
+        "Select category (e.g., Plumbing, Electrical, HVAC)",
+        "Click 'Submit'"
+      ],
+      "expectedResult": "New maintenance request is created, success message is displayed, and the request appears in the maintenance list with status 'Open'"
+    },
+    {
+      "id": "HP-MAINTENANCE-05",
+      "title": "Verify empty state when no maintenance requests exist",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "No maintenance requests exist in the system"
+      ],
+      "steps": [
+        "Navigate to /maintenance",
+        "Verify table or list area is empty",
+        "Verify empty state message is displayed (e.g., 'No maintenance requests found')",
+        "Verify 'Add New Request' button is still visible"
+      ],
+      "expectedResult": "Empty state is clearly communicated with appropriate messaging and call-to-action"
+    },
+    {
+      "id": "ED-MAINTENANCE-06",
+      "title": "Verify handling of maintenance request with special characters and long descriptions",
+      "type": "edge-case",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in"
+      ],
+      "steps": [
+        "Navigate to /maintenance",
+        "Click 'New Request' or 'Add Maintenance' button",
+        "Select a room",
+        "Enter description with special characters (quotes, ampersands, emojis, HTML tags like <script>) and exceed 1000 characters",
+        "Click 'Submit'"
+      ],
+      "expectedResult": "Request is created safely without XSS vulnerabilities, special characters are displayed correctly, and the system handles long text without crashing or truncating unexpectedly"
+    }
+  ]
+}

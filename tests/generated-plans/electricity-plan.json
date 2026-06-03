@@ -1,0 +1,107 @@
+{
+  "module": "Electricity",
+  "route": "/electricity",
+  "testCases": [
+    {
+      "id": "HP-ELECTRICITY-01",
+      "title": "Page loads successfully after login",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User has valid employee credentials",
+        "User is logged in at /auth"
+      ],
+      "steps": [
+        "Navigate to /electricity",
+        "Verify page renders without errors",
+        "Confirm URL matches /electricity"
+      ],
+      "expectedResult": "Electricity module page loads with header, navigation elements, and content area visible"
+    },
+    {
+      "id": "HP-ELECTRICITY-02",
+      "title": "Room-wise electricity data displays correctly",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in",
+        "Rooms have existing electricity records for current month"
+      ],
+      "steps": [
+        "Navigate to /electricity",
+        "Locate room-wise electricity table or list",
+        "Verify each room shows current month charges",
+        "Verify meter readings are visible for each room"
+      ],
+      "expectedResult": "All rooms with electricity usage display correct room number, current month charges, meter readings, and usage dates"
+    },
+    {
+      "id": "HP-ELECTRICITY-03",
+      "title": "Navigation between electricity and other modules",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "User is on /electricity page"
+      ],
+      "steps": [
+        "Click on Rooms module link in navigation",
+        "Verify navigation to /rooms",
+        "Click back on Electricity module link",
+        "Verify return to /electricity with data intact"
+      ],
+      "expectedResult": "User can navigate to other modules and return to electricity page without losing state or encountering errors"
+    },
+    {
+      "id": "HP-ELECTRICITY-04",
+      "title": "View detailed room electricity breakdown",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "At least one room has electricity records"
+      ],
+      "steps": [
+        "Navigate to /electricity",
+        "Click on a specific room entry to view details",
+        "Verify detailed view shows historical meter readings",
+        "Verify monthly breakdown is visible"
+      ],
+      "expectedResult": "Detailed view opens showing complete electricity history for the selected room including past readings and charges"
+    },
+    {
+      "id": "HP-ELECTRICITY-05",
+      "title": "Empty state displays when no electricity records exist",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "No rooms have electricity records"
+      ],
+      "steps": [
+        "Navigate to /electricity",
+        "Observe page content",
+        "Check for empty state message or illustration"
+      ],
+      "expectedResult": "Page displays appropriate empty state message indicating no electricity records found, with option to add records"
+    },
+    {
+      "id": "HP-ELECTRICITY-06",
+      "title": "Meter reading with negative or invalid value",
+      "type": "edge-case",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in",
+        "User has permission to edit meter readings"
+      ],
+      "steps": [
+        "Navigate to /electricity",
+        "Select a room with editable meter reading",
+        "Enter a negative number (e.g., -50) in meter reading field",
+        "Submit the form",
+        "Observe validation response"
+      ],
+      "expectedResult": "System rejects negative meter reading with appropriate validation error message; form does not save invalid data"
+    }
+  ]
+}

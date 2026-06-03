@@ -1,0 +1,102 @@
+{
+  "module": "Rooms",
+  "route": "/rooms",
+  "testCases": [
+    {
+      "id": "HP-ROOMS-01",
+      "title": "Rooms page loads successfully after login",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in with Employee role",
+        "Session is active"
+      ],
+      "steps": [
+        "Navigate to https://jaihindresidency.lovable.app/auth",
+        "Enter valid email and password",
+        "Click login",
+        "Navigate to /rooms"
+      ],
+      "expectedResult": "Rooms listing page renders with header, filters, and room cards displayed correctly"
+    },
+    {
+      "id": "HP-ROOMS-02",
+      "title": "Room cards display correct details and status",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in with Employee role",
+        "At least one room exists in the system"
+      ],
+      "steps": [
+        "Navigate to /rooms",
+        "Review each room card displayed",
+        "Verify room number, type (AC/Non-AC), location (Chalikkavattom/Vyttila), and status are shown"
+      ],
+      "expectedResult": "All room cards display accurate room number, AC/Non-AC type, location, and current status (Vacant/Occupied/Maintenance)"
+    },
+    {
+      "id": "HP-ROOMS-03",
+      "title": "Filter rooms by location successfully",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in with Employee role",
+        "Rooms exist in both Chalikkavattom and Vyttila locations"
+      ],
+      "steps": [
+        "Navigate to /rooms",
+        "Select Chalikkavattom from location filter dropdown",
+        "Observe filtered room list"
+      ],
+      "expectedResult": "Only rooms located in Chalikkavattom are displayed; Vyttila rooms are hidden"
+    },
+    {
+      "id": "HP-ROOMS-04",
+      "title": "Undo Checkout action works for recently checked out room",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in with Employee role",
+        "A room has been checked out recently (within undo window)"
+      ],
+      "steps": [
+        "Navigate to /rooms",
+        "Locate a room with Occupied status that was recently checked out",
+        "Click Undo Checkout button on that room card"
+      ],
+      "expectedResult": "Room status reverts to Vacant, checkout record is removed, and success notification is displayed"
+    },
+    {
+      "id": "HP-ROOMS-05",
+      "title": "Empty state displays when no rooms match filter criteria",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in with Employee role"
+      ],
+      "steps": [
+        "Navigate to /rooms",
+        "Apply a filter combination that returns zero results (e.g., location = Chalikkavattom AND status = Maintenance when no such rooms exist)"
+      ],
+      "expectedResult": "Empty state message is displayed indicating no rooms match the selected criteria, with option to clear filters"
+    },
+    {
+      "id": "HP-ROOMS-06",
+      "title": "Multiple rooms with Maintenance status are handled correctly",
+      "type": "edge-case",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in with Employee role",
+        "At least two rooms are set to Maintenance status simultaneously"
+      ],
+      "steps": [
+        "Navigate to /rooms",
+        "Filter by status = Maintenance",
+        "Verify all maintenance rooms are displayed",
+        "Check that Maintenance status is visually distinct from Vacant and Occupied"
+      ],
+      "expectedResult": "All rooms with Maintenance status are displayed, each showing correct maintenance status indicator, and no Occupied/Vacant rooms appear in the filtered results"
+    }
+  ]
+}

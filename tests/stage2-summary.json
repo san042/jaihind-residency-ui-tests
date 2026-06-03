@@ -1,0 +1,50 @@
+[
+  {
+    "module": "Audit Log",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-audit-log.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Billing",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-billing.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Electricity",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-electricity.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Guests",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-guests.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Laundry",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-laundry.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Maintenance",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-maintenance.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Rent Details",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rent-details.spec.ts",
+    "testCount": 6
+  },
+  {
+    "module": "Rooms",
+    "status": "OK",
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rooms.spec.ts",
+    "testCount": 6
+  }
+]

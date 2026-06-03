@@ -1,0 +1,50 @@
+[
+  {
+    "module": "Rooms",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/rooms-plan.json"
+  },
+  {
+    "module": "Guests",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/guests-plan.json"
+  },
+  {
+    "module": "Rent Details",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/rent-details-plan.json"
+  },
+  {
+    "module": "Electricity",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/electricity-plan.json"
+  },
+  {
+    "module": "Billing",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/billing-plan.json"
+  },
+  {
+    "module": "Maintenance",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/maintenance-plan.json"
+  },
+  {
+    "module": "Laundry",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/laundry-plan.json"
+  },
+  {
+    "module": "Audit Log",
+    "status": "OK",
+    "testCount": 6,
+    "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/audit-log-plan.json"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "module": "Guests",
+  "overallScore": 4,
+  "approved": false,
+  "issues": [
+    {
+      "severity": "critical",
+      "issue": "Syntax error in HP-GUESTS-02: 'await expect(g guestRows)' contains a typo 'g' which will cause compilation failure.",
+      "fix": "Remove the extra character: await expect(guestRows).toBeVisible();"
+    },
+    {
+      "severity": "critical",
+      "issue": "Syntax error in HP-GUESTS-05: 'await expect(g guestTable)' contains a typo 'g' which will cause compilation failure.",
+      "fix": "Remove the extra character: await expect(guestTable).toBeVisible();"
+    },
+    {
+      "severity": "warning",
+      "issue": "Test Isolation Violation: HP-GUESTS-04 modifies state (check-in) which may affect subsequent tests or require cleanup. Tests should ideally be independent.",
+      "fix": "Ensure each test starts with a known state, potentially by using API calls to reset data or mocking responses."
+    },
+    {
+      "severity": "warning",
+      "issue": "HP-GUESTS-05 assumes an empty state without clearing data first. If the database has guests, this test will fail.",
+      "fix": "Add a step to clear all guests via API or UI before asserting the empty state, or mock the response."
+    },
+    {
+      "severity": "info",
+      "issue": "Redundant navigation: Each test navigates to '/guests' even though beforeEach logs in. Consider if the login flow lands on a dashboard and requires navigation, but ensure consistency.",
+      "fix": "Verify if page.goto('/guests') is necessary in every test or if it can be optimized."
+    },
+    {
+      "severity": "info",
+      "issue": "HP-GUESTS-03 and HP-GUESTS-04 both click the first guest row. If the list is dynamic, this might be flaky.",
+      "fix": "Consider using a specific guest ID or name for more reliable selection."
+    }
+  ],
+  "missingCoverage": [
+    "Guest creation/editing functionality",
+    "Check-out process",
+    "Error handling for invalid check-in dates",
+    "Pagination behavior if guest list is large",
+    "Filtering by status (e.g., checked-in, pending)"
+  ],
+  "strengths": [
+    "Correct use of getByRole and getByText for accessibility-friendly locators",
+    "Proper dotenv configuration with path.resolve",
+    "Clear test IDs (HP-GUESTS-XX) for traceability",
+    "Appropriate use of timeouts in navigation and assertions"
+  ]
+}

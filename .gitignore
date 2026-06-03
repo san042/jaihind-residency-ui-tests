@@ -1,0 +1,23 @@
+# Environment — NEVER commit credentials
+.env
+
+# Playwright outputs — too large for git
+reports/test-results/
+reports/html/
+node_modules/
+playwright-report/
+
+# Keep plans + reviews as documentation
+# tests/generated-plans/ → committed ✅
+# tests/generated-reviews/ → committed ✅
+
+# macOS
+.DS_Store
+
+# TypeScript compiled output
+*.js.map
+dist/
+
+# Logs
+*.log
+*.log.*

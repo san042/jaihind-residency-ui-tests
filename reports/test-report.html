@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaihind Residency — Test Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fa; color: #333; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 32px 40px; }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .header .subtitle { opacity: 0.7; font-size: 14px; }
+  .summary { display: flex; gap: 16px; padding: 24px 40px; flex-wrap: wrap; }
+  .stat-card { background: white; border-radius: 12px; padding: 20px 28px; flex: 1; min-width: 140px;
+               box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: center; }
+  .stat-card .num { font-size: 36px; font-weight: 700; }
+  .stat-card .lbl { font-size: 13px; color: #888; margin-top: 4px; }
+  .num.green  { color: #22c55e; }
+  .num.red    { color: #ef4444; }
+  .num.yellow { color: #f59e0b; }
+  .num.blue   { color: #3b82f6; }
+  .num.purple { color: #8b5cf6; }
+  .content { padding: 0 40px 40px; }
+  .suite-block { background: white; border-radius: 12px; margin-bottom: 24px;
+                 box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; }
+  .suite-header { display: flex; justify-content: space-between; align-items: center;
+                  padding: 16px 24px; background: #f8fafc; border-bottom: 1px solid #e5e7eb; }
+  .suite-header h2 { font-size: 16px; font-weight: 600; color: #1e293b; }
+  .suite-stats { display: flex; gap: 8px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #f1f5f9; padding: 12px 16px; text-align: left; font-size: 12px;
+       font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 12px 16px; border-bottom: 1px solid #f1f5f9; font-size: 13px; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr.pass { background: #fff; }
+  tr.fail { background: #fff5f5; }
+  tr.skip { background: #fffbf0; }
+  tr:hover { background: #f8fafc !important; }
+  .id { font-family: monospace; font-weight: 600; color: #3b82f6; white-space: nowrap; }
+  .title { font-weight: 500; color: #1e293b; max-width: 200px; }
+  .steps { max-width: 220px; }
+  .step { color: #64748b; font-size: 12px; padding: 2px 0; }
+  .expected { color: #059669; font-size: 12px; max-width: 180px; }
+  .actual { color: #334155; font-size: 12px; max-width: 180px; }
+  .result-cell { text-align: center; white-space: nowrap; }
+  .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+  .badge-pass { background: #dcfce7; color: #16a34a; }
+  .badge-fail { background: #fee2e2; color: #dc2626; }
+  .badge-skip { background: #fef9c3; color: #ca8a04; }
+  .duration { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  .progress-bar { height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; margin: 8px 40px; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #22c55e, #16a34a); border-radius: 4px; }
+  .meta { padding: 0 40px 8px; font-size: 13px; color: #64748b; display: flex; gap: 24px; }
+  @media print { body { background: white; } .suite-block { box-shadow: none; border: 1px solid #e5e7eb; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🏨 Jaihind Residency — Test Execution Report</h1>
+  <div class="subtitle">Automated UI Testing with Playwright • 3/6/2026, 4:55:01 pm</div>
+</div>
+
+<div class="summary">
+  <div class="stat-card"><div class="num blue">65</div><div class="lbl">Total Tests</div></div>
+  <div class="stat-card"><div class="num green">62</div><div class="lbl">Passed</div></div>
+  <div class="stat-card"><div class="num red">0</div><div class="lbl">Failed</div></div>
+  <div class="stat-card"><div class="num yellow">3</div><div class="lbl">Skipped</div></div>
+  <div class="stat-card"><div class="num purple">100.0%</div><div class="lbl">Pass Rate</div></div>
+  <div class="stat-card"><div class="num blue">202s</div><div class="lbl">Duration</div></div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-fill" style="width: 100.0%"></div>
+</div>
+
+<div class="meta">
+  <span>📅 Run Date: 3/6/2026, 4:55:01 pm</span>
+  <span>🌐 Browsers: Chromium + Mobile Chrome</span>
+  <span>🔗 App: https://jaihindresidency.lovable.app</span>
+  <span>⏱️ Total Duration: 3m 22s</span>
+</div>
+
+<div class="content">
+
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Audit Log</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 6 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-AUDIT-LOG-01: Pag</td>
+      <td class="title">HP-AUDIT-LOG-01: Page loads successfully after login</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">7s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUDIT-LOG-02: Aud</td>
+      <td class="title">HP-AUDIT-LOG-02: Audit log table or empty state is visible</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">7s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUDIT-LOG-03: Aud</td>
+      <td class="title">HP-AUDIT-LOG-03: Audit log table has expected column headers</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">7s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUDIT-LOG-04: Pag</td>
+      <td class="title">HP-AUDIT-LOG-04: Page heading contains audit log text</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUDIT-LOG-05: Nav</td>
+      <td class="title">HP-AUDIT-LOG-05: Navigation from audit log to dashboard works</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUDIT-LOG-06: Una</td>
+      <td class="title">HP-AUDIT-LOG-06: Unauthenticated access to audit-log redirects to auth</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Authentication</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 10 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-AUTH-01</td>
+      <td class="title">Landing page loads with correct title</td>
+      <td class="steps"><div class="step">▶ Navigate to /</div></td>
+      <td class="expected">Page title matches "Jaihind Residency"</td>
+      <td class="actual">Page title matches "Jaihind Residency"</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">2s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-02</td>
+      <td class="title">Auth page renders email, password inputs and Sign In button</td>
+      <td class="steps"><div class="step">▶ Navigate to /auth</div></td>
+      <td class="expected">Email input, password input, Sign In button visible</td>
+      <td class="actual">Email input, password input, Sign In button visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">2s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-03</td>
+      <td class="title">Auth page shows correct email placeholder</td>
+      <td class="steps"><div class="step">▶ Navigate to /auth</div><div class="step">▶ Check email input</div></td>
+      <td class="expected">Placeholder = "you@example.com"</td>
+      <td class="actual">Placeholder = "you@example.com"</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">2s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-04</td>
+      <td class="title">Auth page shows admin-only contact message</td>
+      <td class="steps"><div class="step">▶ Navigate to /auth</div></td>
+      <td class="expected">"Contact your administrator" message visible</td>
+      <td class="actual">"Contact your administrator" message visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">2s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-05</td>
+      <td class="title">Valid user logs in and is redirected to /dashboard</td>
+      <td class="steps"><div class="step">▶ Navigate to /auth</div><div class="step">▶ Fill email</div><div class="step">▶ Fill password</div><div class="step">▶ Click Sign In</div></td>
+      <td class="expected">Redirected to /dashboard</td>
+      <td class="actual">Redirected to /dashboard</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-06</td>
+      <td class="title">Dashboard heading visible after login</td>
+      <td class="steps"><div class="step">▶ Login with valid credentials</div><div class="step">▶ Check dashboard</div></td>
+      <td class="expected">"Employee Dashboard" heading visible</td>
+      <td class="actual">"Employee Dashboard" heading visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-07</td>
+      <td class="title">All 9 nav links visible after login</td>
+      <td class="steps"><div class="step">▶ Login with valid credentials</div><div class="step">▶ Check navigation</div></td>
+      <td class="expected">All 9 nav links visible</td>
+      <td class="actual">All 9 nav links visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-08</td>
+      <td class="title">Logged-in user can sign out and return to /auth</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Click Sign Out</div></td>
+      <td class="expected">Redirected to /auth</td>
+      <td class="actual">Redirected to /auth</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-09</td>
+      <td class="title">Invalid credentials keep user on /auth page</td>
+      <td class="steps"><div class="step">▶ Navigate to /auth</div><div class="step">▶ Fill invalid credentials</div><div class="step">▶ Click Sign In</div></td>
+      <td class="expected">User stays on /auth</td>
+      <td class="actual">User stays on /auth</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">22s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-AUTH-10</td>
+      <td class="title">Vacant Rooms table visible on dashboard after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /dashboard</div></td>
+      <td class="expected">Vacant Rooms table visible</td>
+      <td class="actual">Vacant Rooms table visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Billing</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 6 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-BILLING-01</td>
+      <td class="title">Billing page loads successfully after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /billing</div></td>
+      <td class="expected">Billing page loads, URL = /billing</td>
+      <td class="actual">Billing page loads, URL = /billing</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-BILLING-02</td>
+      <td class="title">Billing page shows heading or billing content</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /billing</div><div class="step">▶ Check heading</div></td>
+      <td class="expected">Billing heading or content visible</td>
+      <td class="actual">Billing heading or content visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-BILLING-03</td>
+      <td class="title">Billing table or empty state is visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /billing</div><div class="step">▶ Check table</div></td>
+      <td class="expected">Billing table or empty state visible</td>
+      <td class="actual">Billing table or empty state visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-BILLING-04</td>
+      <td class="title">Billing page does not redirect to auth</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /billing</div><div class="step">▶ Check URL</div></td>
+      <td class="expected">URL stays at /billing (no redirect to auth)</td>
+      <td class="actual">URL stays at /billing (no redirect to auth)</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-BILLING-05</td>
+      <td class="title">Navigation from billing to other modules works</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /billing</div><div class="step">▶ Click Dashboard</div><div class="step">▶ Click Billing</div></td>
+      <td class="expected">Navigation between modules works</td>
+      <td class="actual">Navigation between modules works</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-BILLING-06</td>
+      <td class="title">Billing page shows monthly bills section or auto-bill info</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /billing</div><div class="step">▶ Check monthly bills</div></td>
+      <td class="expected">Monthly bills or auto-bill info visible</td>
+      <td class="actual">Monthly bills or auto-bill info visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Dashboard & Navigation</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 7 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-DASH-01</td>
+      <td class="title">Dashboard heading visible after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check heading</div></td>
+      <td class="expected">"Employee Dashboard" heading visible</td>
+      <td class="actual">"Employee Dashboard" heading visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-DASH-02</td>
+      <td class="title">Navigation menu with all links visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check navigation</div></td>
+      <td class="expected">Navigation menu visible</td>
+      <td class="actual">Navigation menu visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-DASH-03</td>
+      <td class="title">Sign Out button is present and enabled</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check Sign Out button</div></td>
+      <td class="expected">Sign Out button present and enabled</td>
+      <td class="actual">Sign Out button present and enabled</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-DASH-04</td>
+      <td class="title">Vacant Rooms section is visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check Vacant Rooms section</div></td>
+      <td class="expected">Vacant Rooms section visible</td>
+      <td class="actual">Vacant Rooms section visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-DASH-05</td>
+      <td class="title">All 9 nav links are present</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check all nav links</div></td>
+      <td class="expected">9 nav links: Dashboard, Rooms, Guests, Rent Details, Electricity, Billing, Maintenance, Laundry, Audit Log</td>
+      <td class="actual">9 nav links: Dashboard, Rooms, Guests, Rent Details, Electricity, Billing, Maintenance, Laundry, Audit Log</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-DASH-06</td>
+      <td class="title">Page title reflects Jaihind app name</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check page title</div></td>
+      <td class="expected">Title matches "Jaihind Residency"</td>
+      <td class="actual">Title matches "Jaihind Residency"</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">2s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-DASH-07</td>
+      <td class="title">Rooms Under Maintenance section visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Check maintenance section</div></td>
+      <td class="expected">Rooms Under Maintenance section visible</td>
+      <td class="actual">Rooms Under Maintenance section visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Electricity</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 5 passed</span>
+        
+        <span class="badge badge-skip">⏭️ 1 skipped</span>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-ELECTRICITY-01</td>
+      <td class="title">Page loads successfully after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /electricity</div></td>
+      <td class="expected">Electricity page loads, URL = /electricity</td>
+      <td class="actual">Electricity page loads, URL = /electricity</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ELECTRICITY-02</td>
+      <td class="title">Room-wise electricity data displays correctly</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /electricity</div><div class="step">▶ Check table</div></td>
+      <td class="expected">Electricity data table or empty state visible</td>
+      <td class="actual">Electricity data table or empty state visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ELECTRICITY-03</td>
+      <td class="title">Navigation between electricity and rooms works</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /electricity</div><div class="step">▶ Click Rooms</div><div class="step">▶ Click Electricity</div></td>
+      <td class="expected">Navigation between modules works</td>
+      <td class="actual">Navigation between modules works</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ELECTRICITY-04</td>
+      <td class="title">Electricity page shows charges heading or summary</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /electricity</div><div class="step">▶ Check heading</div></td>
+      <td class="expected">Electricity charges heading or summary visible</td>
+      <td class="actual">Electricity charges heading or summary visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="skip">
+      <td class="id">HP-ELECTRICITY-05</td>
+      <td class="title">Empty state displays when no records exist</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /electricity</div><div class="step">▶ Check empty state</div></td>
+      <td class="expected">Empty state visible (skipped if records exist)</td>
+      <td class="actual">Skipped: Records exist — empty state not applicable</td>
+      <td class="result-cell">
+        <span class="badge badge-skip">⏭️ SKIP</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ELECTRICITY-06</td>
+      <td class="title">Page does not crash with no meter reading data</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /electricity</div><div class="step">▶ Check stability</div></td>
+      <td class="expected">Page loads without crash</td>
+      <td class="actual">Page loads without crash</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Guests</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 5 passed</span>
+        
+        <span class="badge badge-skip">⏭️ 1 skipped</span>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-GUESTS-01</td>
+      <td class="title">Guest page loads successfully after authentication</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /guests</div></td>
+      <td class="expected">Guests page loads, URL = /guests</td>
+      <td class="actual">Guests page loads, URL = /guests</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-GUESTS-02</td>
+      <td class="title">Guest listing table is visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /guests</div><div class="step">▶ Check table</div></td>
+      <td class="expected">Guest table or empty state visible</td>
+      <td class="actual">Guest table or empty state visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-GUESTS-03</td>
+      <td class="title">Guest rows are present in the table</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /guests</div><div class="step">▶ Count rows</div></td>
+      <td class="expected">More than 1 row present in table</td>
+      <td class="actual">More than 1 row present in table</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-GUESTS-04</td>
+      <td class="title">Search input accepts text and filters results</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /guests</div><div class="step">▶ Fill search input</div></td>
+      <td class="expected">Search filters results or shows no-results message</td>
+      <td class="actual">Search filters results or shows no-results message</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="skip">
+      <td class="id">HP-GUESTS-05</td>
+      <td class="title">Empty state shows correct message when no guests</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /guests</div><div class="step">▶ Check empty state</div></td>
+      <td class="expected">"No guests" message visible (skipped if guests exist)</td>
+      <td class="actual">Skipped: Guests exist — empty state not applicable</td>
+      <td class="result-cell">
+        <span class="badge badge-skip">⏭️ SKIP</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-GUESTS-06</td>
+      <td class="title">Special character search returns no results gracefully</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /guests</div><div class="step">▶ Search "@#$%"</div></td>
+      <td class="expected">Empty results or no rows shown</td>
+      <td class="actual">Empty results or no rows shown</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Laundry</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 6 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-LAUNDRY-01</td>
+      <td class="title">Laundry page loads successfully after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /laundry</div></td>
+      <td class="expected">Laundry page loads, URL = /laundry</td>
+      <td class="actual">Laundry page loads, URL = /laundry</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">7s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-LAUNDRY-02</td>
+      <td class="title">Laundry records or empty state is displayed</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /laundry</div><div class="step">▶ Check content</div></td>
+      <td class="expected">Laundry records or empty state visible</td>
+      <td class="actual">Laundry records or empty state visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-LAUNDRY-03</td>
+      <td class="title">Laundry page heading is visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /laundry</div><div class="step">▶ Check heading</div></td>
+      <td class="expected">Laundry heading visible</td>
+      <td class="actual">Laundry heading visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-LAUNDRY-04</td>
+      <td class="title">Navigation from laundry to other modules works</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /laundry</div><div class="step">▶ Click Dashboard</div><div class="step">▶ Click Laundry</div></td>
+      <td class="expected">Navigation between modules works</td>
+      <td class="actual">Navigation between modules works</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-LAUNDRY-05</td>
+      <td class="title">Laundry table columns are present when data exists</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /laundry</div><div class="step">▶ Check table columns</div></td>
+      <td class="expected">Table headers visible (skipped if no data)</td>
+      <td class="actual">Table headers visible (skipped if no data)</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-LAUNDRY-06</td>
+      <td class="title">Unauthenticated access to laundry redirects to auth</td>
+      <td class="steps"><div class="step">▶ Open fresh browser (no auth)</div><div class="step">▶ Navigate to /laundry</div></td>
+      <td class="expected">Redirected to /auth</td>
+      <td class="actual">Redirected to /auth</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">3s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Maintenance</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 6 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-MAINTENANCE-01</td>
+      <td class="title">Maintenance page loads successfully after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /maintenance</div></td>
+      <td class="expected">Maintenance page loads, URL = /maintenance</td>
+      <td class="actual">Maintenance page loads, URL = /maintenance</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-MAINTENANCE-02</td>
+      <td class="title">Maintenance data or empty state is displayed</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /maintenance</div><div class="step">▶ Check data</div></td>
+      <td class="expected">Maintenance data or empty state visible</td>
+      <td class="actual">Maintenance data or empty state visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-MAINTENANCE-03</td>
+      <td class="title">Navigation from maintenance to other modules works</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /maintenance</div><div class="step">▶ Click Rooms</div><div class="step">▶ Click Maintenance</div></td>
+      <td class="expected">Navigation between modules works</td>
+      <td class="actual">Navigation between modules works</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-MAINTENANCE-04</td>
+      <td class="title">Add new maintenance request button is present if available</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /maintenance</div><div class="step">▶ Check add button</div></td>
+      <td class="expected">Add request button present and enabled (if available)</td>
+      <td class="actual">Add request button present and enabled (if available)</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-MAINTENANCE-05</td>
+      <td class="title">Maintenance page shows expenses or summary section</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /maintenance</div><div class="step">▶ Check summary</div></td>
+      <td class="expected">Expenses or summary section visible</td>
+      <td class="actual">Expenses or summary section visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-MAINTENANCE-06</td>
+      <td class="title">Maintenance page does not crash on load</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /maintenance</div><div class="step">▶ Check stability</div></td>
+      <td class="expected">Page loads without crash, URL = /maintenance</td>
+      <td class="actual">Page loads without crash, URL = /maintenance</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Rent Details</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 6 passed</span>
+        
+        
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-RENT-DETAILS-01: </td>
+      <td class="title">HP-RENT-DETAILS-01: Rent Details page loads successfully</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-RENT-DETAILS-02: </td>
+      <td class="title">HP-RENT-DETAILS-02: Page shows correct heading</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-RENT-DETAILS-03: </td>
+      <td class="title">HP-RENT-DETAILS-03: Page shows room-wise rent register description</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">5s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-RENT-DETAILS-04: </td>
+      <td class="title">HP-RENT-DETAILS-04: Select Room dropdown is visible</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-RENT-DETAILS-05: </td>
+      <td class="title">HP-RENT-DETAILS-05: Default state shows select a room prompt</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-RENT-DETAILS-06: </td>
+      <td class="title">HP-RENT-DETAILS-06: Navigation from rent details to dashboard works</td>
+      <td class="steps"><div class="step">▶ See spec file</div></td>
+      <td class="expected">See spec file</td>
+      <td class="actual">See spec file</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+  <div class="suite-block">
+    <div class="suite-header">
+      <h2>HP — Rooms</h2>
+      <div class="suite-stats">
+        <span class="badge badge-pass">✅ 5 passed</span>
+        
+        <span class="badge badge-skip">⏭️ 1 skipped</span>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Test ID</th>
+          <th>Test Case</th>
+          <th>Test Steps</th>
+          <th>Expected Output</th>
+          <th>Actual Output</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr class="pass">
+      <td class="id">HP-ROOMS-01</td>
+      <td class="title">Rooms page loads successfully after login</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /rooms</div></td>
+      <td class="expected">Rooms page loads, URL = /rooms</td>
+      <td class="actual">Rooms page loads, URL = /rooms</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ROOMS-02</td>
+      <td class="title">Room data or empty state is displayed</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /rooms</div><div class="step">▶ Check content</div></td>
+      <td class="expected">Room data or empty state visible</td>
+      <td class="actual">Room data or empty state visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ROOMS-03</td>
+      <td class="title">Room entries show type and location info</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /rooms</div><div class="step">▶ Check room details</div></td>
+      <td class="expected">AC/Non-AC and location labels visible</td>
+      <td class="actual">AC/Non-AC and location labels visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">6s</div>
+      </td>
+    </tr>
+    <tr class="skip">
+      <td class="id">HP-ROOMS-04</td>
+      <td class="title">Undo Checkout button is conditionally present for vacant rooms</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /rooms</div><div class="step">▶ Check Undo Checkout</div></td>
+      <td class="expected">Undo Checkout button present (or skipped if none)</td>
+      <td class="actual">Skipped: No recently checked-out rooms — Undo Checkout not shown</td>
+      <td class="result-cell">
+        <span class="badge badge-skip">⏭️ SKIP</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ROOMS-05</td>
+      <td class="title">Room status labels are visible</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /rooms</div><div class="step">▶ Check status labels</div></td>
+      <td class="expected">Vacant/Occupied/Maintenance labels visible</td>
+      <td class="actual">Vacant/Occupied/Maintenance labels visible</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr>
+    <tr class="pass">
+      <td class="id">HP-ROOMS-06</td>
+      <td class="title">Navigation from rooms to dashboard works</td>
+      <td class="steps"><div class="step">▶ Login</div><div class="step">▶ Navigate to /rooms</div><div class="step">▶ Click Dashboard link</div></td>
+      <td class="expected">Navigated to /dashboard</td>
+      <td class="actual">Navigated to /dashboard</td>
+      <td class="result-cell">
+        <span class="badge badge-pass">✅ PASS</span>
+        <div class="duration">4s</div>
+      </td>
+    </tr></tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

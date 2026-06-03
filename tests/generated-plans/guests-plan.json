@@ -1,0 +1,118 @@
+{
+  "module": "Guests",
+  "route": "/guests",
+  "testCases": [
+    {
+      "id": "HP-GUESTS-01",
+      "title": "Guests page loads successfully after authentication",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in at /auth with valid employee credentials",
+        "User has Employee role"
+      ],
+      "steps": [
+        "Navigate to https://jaihindresidency.lovable.app/guests",
+        "Verify page header displays 'Guests'",
+        "Verify navigation sidebar is visible",
+        "Verify top action bar is present"
+      ],
+      "expectedResult": "Page loads without errors, header shows 'Guests', sidebar navigation is accessible, and action bar is visible"
+    },
+    {
+      "id": "HP-GUESTS-02",
+      "title": "Guest listing displays correct data from database",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in at /auth with valid employee credentials",
+        "Database contains at least 3 guest records"
+      ],
+      "steps": [
+        "Navigate to /guests",
+        "Verify guest table/list is displayed",
+        "Verify each guest row contains: name, room number, check-in date, check-out date, status",
+        "Verify total guest count matches database records",
+        "Verify sorting controls are functional"
+      ],
+      "expectedResult": "All guest records are displayed with accurate data, correct column headers, and matching total count"
+    },
+    {
+      "id": "HP-GUESTS-03",
+      "title": "Navigation to guest detail page from listing",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in at /auth with valid employee credentials",
+        "At least one guest record exists"
+      ],
+      "steps": [
+        "Navigate to /guests",
+        "Locate a guest record in the listing",
+        "Click on the guest name or row",
+        "Verify URL changes to /guests/{id}",
+        "Verify guest detail page loads with full information",
+        "Verify back navigation returns to listing"
+      ],
+      "expectedResult": "Guest detail page loads successfully showing complete guest information including personal details, booking info, and stay history"
+    },
+    {
+      "id": "HP-GUESTS-04",
+      "title": "Check-in guest from guest detail page",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in at /auth with valid employee credentials",
+        "At least one guest has 'Confirmed' status"
+      ],
+      "steps": [
+        "Navigate to /guests",
+        "Click on a guest with 'Confirmed' status",
+        "Click 'Check-in' button on detail page",
+        "Enter check-in date and time",
+        "Click 'Confirm Check-in'",
+        "Verify success notification appears",
+        "Verify guest status changes to 'Checked In'"
+      ],
+      "expectedResult": "Guest is successfully checked in, status updates to 'Checked In', check-in timestamp is recorded, and success message is displayed"
+    },
+    {
+      "id": "HP-GUESTS-05",
+      "title": "Empty state displayed when no guests exist",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in at /auth with valid employee credentials",
+        "No guest records exist in the system"
+      ],
+      "steps": [
+        "Navigate to /guests",
+        "Verify empty state illustration is displayed",
+        "Verify message 'No guests found' or similar is shown",
+        "Verify 'Add Guest' or 'New Guest' button is visible"
+      ],
+      "expectedResult": "Empty state is properly displayed with appropriate messaging and CTA button for adding new guests"
+    },
+    {
+      "id": "HP-GUESTS-06",
+      "title": "Search with special characters and no results",
+      "type": "edge-case",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in at /auth with valid employee credentials",
+        "Guest records exist in the system"
+      ],
+      "steps": [
+        "Navigate to /guests",
+        "Enter special characters (e.g., '@#$%') in search field",
+        "Press Enter or click search",
+        "Verify search results are empty",
+        "Enter non-existent name (e.g., 'xyz123') in search field",
+        "Verify appropriate 'No results found' message is displayed",
+        "Clear search field",
+        "Verify full guest listing is restored"
+      ],
+      "expectedResult": "Search handles special characters gracefully without errors, displays 'no results' message for invalid queries, and restores full listing when search is cleared"
+    }
+  ]
+}

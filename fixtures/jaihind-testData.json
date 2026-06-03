@@ -1,0 +1,26 @@
+{
+  "app": {
+    "name": "Jaihind Residency",
+    "baseURL": "https://jaihindresidency.lovable.app",
+    "expectedTitle": "Jaihind Residency",
+    "description": "Complete lodge management solution for rooms, guests, billing, and more.",
+    "builtWith": "Lovable.dev"
+  },
+  "routes": {
+    "root": "/",
+    "auth": "/auth",
+    "dashboard": "/dashboard",
+    "rooms": "/rooms",
+    "guests": "/guests",
+    "billing": "/billing"
+  },
+  "search": {
+    "validQuery": "test search",
+    "specialChars": "<script>alert(1)</script>"
+  },
+  "timeouts": {
+    "short": 5000,
+    "medium": 15000,
+    "long": 30000
+  }
+}

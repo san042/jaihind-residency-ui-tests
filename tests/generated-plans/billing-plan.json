@@ -1,0 +1,115 @@
+{
+  "module": "Billing",
+  "route": "/billing",
+  "testCases": [
+    {
+      "id": "HP-BILLING-01",
+      "title": "Billing page loads successfully with authentication",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in at /auth with valid email and password",
+        "User has Employee role"
+      ],
+      "steps": [
+        "Navigate to /billing",
+        "Verify page loads without redirect to login",
+        "Confirm billing header and main content area are visible"
+      ],
+      "expectedResult": "Billing page loads successfully, displaying the bill generation interface with navigation elements, no authentication errors, and user role-appropriate controls visible"
+    },
+    {
+      "id": "HP-BILLING-02",
+      "title": "Billing history table displays existing bills with correct data",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Multiple bills exist in the system for different lodgers"
+      ],
+      "steps": [
+        "Navigate to /billing",
+        "Scroll to billing history section",
+        "Verify table displays columns for bill ID, lodger name, amount, status, and date",
+        "Check that auto-generated bills appear with correct amounts",
+        "Verify bill statuses (paid, pending, overdue) are color-coded"
+      ],
+      "expectedResult": "Billing history table renders with all existing bills, each showing accurate lodger information, correct amounts, proper status indicators, and chronological ordering from newest to oldest"
+    },
+    {
+      "id": "HP-BILLING-03",
+      "title": "Bill status filter and navigation between sections works correctly",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Bills exist with various statuses"
+      ],
+      "steps": [
+        "Navigate to /billing",
+        "Click on 'Paid' filter tab",
+        "Verify only paid bills are displayed",
+        "Click on 'Pending' filter tab",
+        "Verify only pending bills are displayed",
+        "Click on 'Overdue' filter tab",
+        "Verify only overdue bills are displayed",
+        "Click 'View All' to reset filters"
+      ],
+      "expectedResult": "Filter tabs correctly display bills matching the selected status, switching between filters updates the table without page reload, and 'View All' restores the complete bill list"
+    },
+    {
+      "id": "HP-BILLING-04",
+      "title": "Bill generation creates new bill with correct lodger details",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "At least one active lodger exists in the system"
+      ],
+      "steps": [
+        "Navigate to /billing",
+        "Click 'Generate New Bill' button",
+        "Select an active lodger from dropdown",
+        "Verify lodger details (name, room number) populate automatically",
+        "Review calculated amount based on stay duration and rates",
+        "Click 'Confirm and Save'"
+      ],
+      "expectedResult": "New bill is generated successfully with correct lodger details, accurate amount calculation, and appears in billing history with 'Pending' status"
+    },
+    {
+      "id": "HP-BILLING-05",
+      "title": "Empty state displays when no bills exist in the system",
+      "type": "edge-case",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "No bills exist in the system (admin cleared all records)"
+      ],
+      "steps": [
+        "Navigate to /billing",
+        "Observe the billing history section",
+        "Check for empty state message or illustration",
+        "Verify 'Generate New Bill' button is still accessible"
+      ],
+      "expectedResult": "Empty state displays a clear message such as 'No bills found' with an appropriate illustration, and the generate bill button remains enabled for creating new bills"
+    },
+    {
+      "id": "HP-BILLING-06",
+      "title": "Auto-generated monthly bill for lodger with extended stay handles edge case of overlapping billing periods",
+      "type": "edge-case",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Lodger has stay spanning across two billing cycles (e.g., 15th of previous month to 15th of current month)"
+      ],
+      "steps": [
+        "Navigate to /billing",
+        "Locate the auto-generated bill for the overlapping period",
+        "Verify the bill correctly prorates charges across the two billing periods",
+        "Check that no duplicate charges appear for the overlapping days",
+        "Confirm the total amount matches the expected prorated calculation"
+      ],
+      "expectedResult": "Auto-generated bill correctly handles overlapping billing periods with accurate prorated charges, no duplicate entries, and the total amount reflects the correct calculation for the extended stay"
+    }
+  ]
+}

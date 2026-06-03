@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-06-03T09:50:13.450Z",
+  "totalModules": 8,
+  "approved": 0,
+  "parseFailures": 0,
+  "errors": 0,
+  "stages": {
+    "stage1": [
+      {
+        "module": "Rooms",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/rooms-plan.json"
+      },
+      {
+        "module": "Guests",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/guests-plan.json"
+      },
+      {
+        "module": "Rent Details",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/rent-details-plan.json"
+      },
+      {
+        "module": "Electricity",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/electricity-plan.json"
+      },
+      {
+        "module": "Billing",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/billing-plan.json"
+      },
+      {
+        "module": "Maintenance",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/maintenance-plan.json"
+      },
+      {
+        "module": "Laundry",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/laundry-plan.json"
+      },
+      {
+        "module": "Audit Log",
+        "status": "OK",
+        "testCount": 6,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-plans/audit-log-plan.json"
+      }
+    ],
+    "stage2": [
+      {
+        "module": "Audit Log",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-audit-log.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Billing",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-billing.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Electricity",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-electricity.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Guests",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-guests.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Laundry",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-laundry.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Maintenance",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-maintenance.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Rent Details",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rent-details.spec.ts",
+        "testCount": 6
+      },
+      {
+        "module": "Rooms",
+        "status": "OK",
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rooms.spec.ts",
+        "testCount": 6
+      }
+    ],
+    "stage3": [
+      {
+        "module": "Audit Log",
+        "status": "OK",
+        "score": 5,
+        "approved": false,
+        "critical": 1,
+        "warnings": 2,
+        "missing": 4,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-audit-log-review.json"
+      },
+      {
+        "module": "Billing",
+        "status": "OK",
+        "score": 6,
+        "approved": false,
+        "critical": 1,
+        "warnings": 3,
+        "missing": 4,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-billing-review.json"
+      },
+      {
+        "module": "Electricity",
+        "status": "OK",
+        "score": 6,
+        "approved": false,
+        "critical": 1,
+        "warnings": 2,
+        "missing": 5,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-electricity-review.json"
+      },
+      {
+        "module": "Guests",
+        "status": "OK",
+        "score": 4,
+        "approved": false,
+        "critical": 2,
+        "warnings": 2,
+        "missing": 5,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-guests-review.json"
+      },
+      {
+        "module": "Laundry",
+        "status": "OK",
+        "score": 6,
+        "approved": false,
+        "critical": 2,
+        "warnings": 2,
+        "missing": 3,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-laundry-review.json"
+      },
+      {
+        "module": "Maintenance",
+        "status": "OK",
+        "score": 6,
+        "approved": false,
+        "critical": 2,
+        "warnings": 3,
+        "missing": 5,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-maintenance-review.json"
+      },
+      {
+        "module": "Rent Details",
+        "status": "OK",
+        "score": 7,
+        "approved": false,
+        "critical": 1,
+        "warnings": 2,
+        "missing": 4,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-rent-details-review.json"
+      },
+      {
+        "module": "Rooms",
+        "status": "OK",
+        "score": 6,
+        "approved": false,
+        "critical": 2,
+        "warnings": 2,
+        "missing": 4,
+        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/generated-reviews/jaihind-rooms-review.json"
+      }
+    ]
+  }
+}

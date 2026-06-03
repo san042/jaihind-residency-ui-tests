@@ -1,0 +1,12 @@
+{
+  "validUser": {
+    "name": "Santhosh",
+    "role": "Employee",
+    "email": "sankumars@live.com",
+    "password": "use_env_TEST_USER_PASSWORD"
+  },
+  "invalidUser": {
+    "email": "notexist@jaihind.test",
+    "password": "WrongPass@999"
+  }
+}

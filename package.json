@@ -1,0 +1,21 @@
+{
+  "name": "jaihind-ui-testing",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript UI tests for Jaihind (Lovable.dev app)",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:happy": "npx playwright test tests/happy-path/",
+    "test:smoke": "npx playwright test tests/smoke/",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report reports/html",
+    "test:ui": "npx playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "dotenv": "^16.4.0"
+  },
+  "author": "Santosh Kumar",
+  "license": "MIT"
+}

@@ -1,0 +1,4793 @@
+{
+  "config": {
+    "configFile": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/playwright.config.ts",
+    "rootDir": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/reports/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/reports/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "list"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 3,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "happy-path/jaihind-audit-log.spec.ts",
+      "file": "happy-path/jaihind-audit-log.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Audit Log",
+          "file": "happy-path/jaihind-audit-log.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-AUDIT-LOG-01: Page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6907,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:01.628Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-8182fcb7f6bdbf0df8a1",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-02: Audit log table or empty state is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6895,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:01.629Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-5f5e36ce89dbdd922059",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-03: Audit log table has expected column headers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6886,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:01.628Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-c0892f004cdb92b86425",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-04: Page heading contains audit log text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4412,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:08.752Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-a41adcc70b4001942cc4",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-05: Navigation from audit log to dashboard works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4391,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:08.761Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-a7f380a19022297ced89",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 58,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-06: Unauthenticated access to audit-log redirects to auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3254,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:08.773Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-1f273eb3c2c0600876f7",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-01: Page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4566,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:44.359Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-d6c343755e6b52faf111",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-02: Audit log table or empty state is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:44.377Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-502d4d051c88604ccf1a",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-03: Audit log table has expected column headers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4451,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:44.379Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-bd367a3c7b6267ff7907",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-04: Page heading contains audit log text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4301,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:48.905Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-647a4787f93ffad02b79",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 49,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-05: Navigation from audit log to dashboard works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4292,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:48.910Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-12e6fbda4d92fe96efb8",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 58,
+              "column": 7
+            },
+            {
+              "title": "HP-AUDIT-LOG-06: Unauthenticated access to audit-log redirects to auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3119,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:48.998Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4974a0f9a2e7451ed837-906afe3f60ab5ec22b1d",
+              "file": "happy-path/jaihind-audit-log.spec.ts",
+              "line": 66,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-auth.spec.ts",
+      "file": "happy-path/jaihind-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Authentication",
+          "file": "happy-path/jaihind-auth.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-AUTH-01: Landing page loads with correct title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1686,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:12.036Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-876c0e7ff934d1d07067",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-02: Auth page renders email, password inputs and Sign In button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:13.161Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-055316421c4e33841f1a",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-03: Auth page shows correct email placeholder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2053,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:13.172Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-57ef3734b5b77bd0231c",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-04: Auth page shows admin-only contact message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2043,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:13.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-0ac48fa1affd659b7114",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-05: Valid user logs in and is redirected to /dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2523,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:15.229Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-bf32f93d27396ed0de49",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-06: Dashboard heading visible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3302,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:15.246Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-60b81c16fb64a532c3b8",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-07: All 9 nav links visible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3287,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:15.776Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-32d1900576472e6a1a78",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-08: Logged-in user can sign out and return to /auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4008,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:17.757Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-e1732dca132e6a5633cd",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-09: Invalid credentials keep user on /auth page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 22255,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:18.552Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-226c83337d439a8b6f8b",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-10: Vacant Rooms table visible on dashboard after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3127,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:19.068Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-1d6b6e92a4f4d78906a1",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-01: Landing page loads with correct title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1584,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:52.124Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-3ecf5b8f9a848311c95d",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-02: Auth page renders email, password inputs and Sign In button",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1874,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:53.212Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-392792c17b8e965041bf",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-03: Auth page shows correct email placeholder",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1883,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:53.215Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-f2f55853163d700368f3",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-04: Auth page shows admin-only contact message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1939,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:53.715Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-59af50b7e3e3c3b49649",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-05: Valid user logs in and is redirected to /dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2393,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:55.092Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-9f68d03b7d68f33028e4",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-06: Dashboard heading visible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3242,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:55.104Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-1c280807a52e26ba3962",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-07: All 9 nav links visible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:55.661Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-fb56512d48cbb546d0a8",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-08: Logged-in user can sign out and return to /auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3982,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:57.489Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-af5d56199df1022a62d3",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-09: Invalid credentials keep user on /auth page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 22196,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:58.350Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-4122390129a97252d9b7",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "HP-AUTH-10: Vacant Rooms table visible on dashboard after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3180,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:59.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3b43245352e8085093f2-f8344114f1a1d2b30c89",
+              "file": "happy-path/jaihind-auth.spec.ts",
+              "line": 102,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-billing.spec.ts",
+      "file": "happy-path/jaihind-billing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Billing",
+          "file": "happy-path/jaihind-billing.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-BILLING-01: Billing page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5535,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:21.770Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-4c6912e729980d06436a",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-02: Billing page shows heading or billing content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5177,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:22.200Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-a3c66f7851d81f26e90f",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-03: Billing table or empty state is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5537,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:27.310Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-d2982ed2a27bb5943a41",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-04: Billing page does not redirect to auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5656,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:27.382Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-2cc77e6fc5fd88065b8d",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-05: Navigation from billing to other modules works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5621,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:32.852Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-dc1e363e6d5297d761f3",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-06: Billing page shows monthly bills section or auto-bill info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5845,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:33.042Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-ed1bc86aaeb86e5530cc",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 62,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-01: Billing page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5485,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:01.477Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-734ae2edec1c48188b7e",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-02: Billing page shows heading or billing content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5314,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:02.282Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-23d8aa25cf1d1f65d342",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-03: Billing table or empty state is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5931,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:06.967Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-d6b3636aa4bfb80d031a",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-04: Billing page does not redirect to auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5630,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:07.604Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-c1a2ba859fd5770bc0f5",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-05: Navigation from billing to other modules works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5667,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:12.904Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-fef460439190c8d297b4",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "HP-BILLING-06: Billing page shows monthly bills section or auto-bill info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5251,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:13.238Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "571b4820146085ae0a71-ac0a44e0fa81cef0463e",
+              "file": "happy-path/jaihind-billing.spec.ts",
+              "line": 62,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-dashboard.spec.ts",
+      "file": "happy-path/jaihind-dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Dashboard & Navigation",
+          "file": "happy-path/jaihind-dashboard.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-DASH-01: Dashboard heading visible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3237,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:38.478Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-5a1b1d5a694bf7ee4d85",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-02: Navigation menu with all links visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3193,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:38.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-d5d4463757b78830bcf3",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-03: Sign Out button is present and enabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3143,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:40.812Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-1123adefa67d0616bbb9",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-04: Vacant Rooms section is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3209,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:41.720Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-fe937da7f46013f024a5",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-05: All 9 nav links are present",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3184,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:42.090Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-559dda09fadd75e57918",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-06: Page title reflects Jaihind app name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2352,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:43.960Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-1951a545b349108243ef",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-07: Rooms Under Maintenance section visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3220,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:44.934Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-2a222754a5fdf465e5b1",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-01: Dashboard heading visible after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3273,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:18.495Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-3d9a704fec6e97303f8f",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-02: Navigation menu with all links visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3221,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:18.577Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-7d6d45bb6b606c81d3c0",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-03: Sign Out button is present and enabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:20.553Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-39ec373131922b97e53c",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-04: Vacant Rooms section is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3229,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:21.773Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-5ba29f5bf82004404e99",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-05: All 9 nav links are present",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:21.803Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-db2d5ddaee69d8b7e739",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-06: Page title reflects Jaihind app name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2347,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:23.745Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-fbe90e877e154b2f7a6c",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "HP-DASH-07: Rooms Under Maintenance section visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3248,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:24.972Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4e426c164d634b4f0abc-0cef79054e63d9e6c0d6",
+              "file": "happy-path/jaihind-dashboard.spec.ts",
+              "line": 66,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-electricity.spec.ts",
+      "file": "happy-path/jaihind-electricity.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Electricity",
+          "file": "happy-path/jaihind-electricity.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-ELECTRICITY-01: Page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:45.280Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-6b8f35e4f8aad8bfc531",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-02: Room-wise electricity data displays correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:46.319Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-ede45403ce9d61dd1dba",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-03: Navigation between electricity and rooms works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5269,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:48.161Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-538384db828141708cd3",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-04: Electricity page shows charges heading or summary",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5214,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:50.570Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-26a932337edfff83a48a",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-05: Empty state displays when no records exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Records exist — empty state not applicable",
+                      "location": {
+                        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-electricity.spec.ts",
+                        "line": 81,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "skipped",
+                      "duration": 5045,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:51.472Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Records exist — empty state not applicable",
+                          "location": {
+                            "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-electricity.spec.ts",
+                            "line": 81,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-311ad9e470b711434cba",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-06: Page does not crash with no meter reading data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5208,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:53.434Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-ed82e8b4f3578ab0b820",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-01: Page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5396,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:25.009Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-6a8ea0becaf5a540e397",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-02: Room-wise electricity data displays correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5176,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:26.099Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-b8d4cbf1ea5578f610f6",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-03: Navigation between electricity and rooms works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5156,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:28.226Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-26ac707ffd4d2c7bff79",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-04: Electricity page shows charges heading or summary",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:30.409Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-52daf19dc2aed85b4120",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-05: Empty state displays when no records exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Records exist — empty state not applicable",
+                      "location": {
+                        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-electricity.spec.ts",
+                        "line": 81,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "skipped",
+                      "duration": 5210,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:31.281Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Records exist — empty state not applicable",
+                          "location": {
+                            "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-electricity.spec.ts",
+                            "line": 81,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-79e8c4a714afd375476b",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "HP-ELECTRICITY-06: Page does not crash with no meter reading data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5139,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:33.386Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7bfcfcafee9c710ee41e-931e1364767c6b88326e",
+              "file": "happy-path/jaihind-electricity.spec.ts",
+              "line": 85,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-guests.spec.ts",
+      "file": "happy-path/jaihind-guests.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Guests",
+          "file": "happy-path/jaihind-guests.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-GUESTS-01: Guest page loads successfully after authentication",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4525,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:55.790Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-1b095ac981ca3967408e",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-02: Guest listing table is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4170,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:56.524Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-fee91e2bfa1ce1432bfd",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-03: Guest rows are present in the table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4102,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:25:58.649Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-c14894340ee501d5261d",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-04: Search input accepts text and filters results",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4262,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:00.320Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-5226f0a94e18e1e98e3a",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-05: Empty state shows correct message when no guests",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Guests exist — empty state not applicable",
+                      "location": {
+                        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-guests.spec.ts",
+                        "line": 81,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "skipped",
+                      "duration": 4103,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:00.698Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Guests exist — empty state not applicable",
+                          "location": {
+                            "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-guests.spec.ts",
+                            "line": 81,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-f34d0f81435b2209673c",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-06: Special character search returns no results gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5041,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:02.755Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-c5dcb99b254bbca8308f",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-01: Guest page loads successfully after authentication",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4400,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:35.626Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-0854fc059b137c1c54e8",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-02: Guest listing table is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4328,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:36.498Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-6bb964d12182331b3762",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-03: Guest rows are present in the table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4281,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:38.531Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-8ea99c4d243e08802e8f",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-04: Search input accepts text and filters results",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4647,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:40.031Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-65d57479b99282426a03",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-05: Empty state shows correct message when no guests",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Guests exist — empty state not applicable",
+                      "location": {
+                        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-guests.spec.ts",
+                        "line": 81,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "skipped",
+                      "duration": 4213,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:40.831Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Guests exist — empty state not applicable",
+                          "location": {
+                            "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-guests.spec.ts",
+                            "line": 81,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-58608d83cb8c090d2832",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "HP-GUESTS-06: Special character search returns no results gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4220,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:42.817Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "34432d05beb2c4a49e1a-2b336256713ef59f33fa",
+              "file": "happy-path/jaihind-guests.spec.ts",
+              "line": 85,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-laundry.spec.ts",
+      "file": "happy-path/jaihind-laundry.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Laundry",
+          "file": "happy-path/jaihind-laundry.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-LAUNDRY-01: Laundry page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6533,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:04.587Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-e8e698c15042b31090f9",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-02: Laundry records or empty state is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6322,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:04.807Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-45b9f3612163d6450002",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-03: Laundry page heading is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5267,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:07.802Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-13a838225389063907a3",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-04: Navigation from laundry to other modules works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5217,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:11.125Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-64119d11f82083c0decd",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-05: Laundry table columns are present when data exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5250,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:11.134Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-985ac614d1532f9ed4c9",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-06: Unauthenticated access to laundry redirects to auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3162,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:13.073Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-c48b583ed6438d453271",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 68,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-01: Laundry page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5348,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:44.683Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-ff96494f8763b45050a0",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-02: Laundry records or empty state is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5162,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:45.054Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-236bcf0e7bdf4a1c38fa",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-03: Laundry page heading is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5161,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:47.042Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-dbc49c6a740ac0522202",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-04: Navigation from laundry to other modules works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5190,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:50.035Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-f821a610c632f58244d3",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-05: Laundry table columns are present when data exists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5261,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:50.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-5884c52ef1c11e4738ad",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 53,
+              "column": 7
+            },
+            {
+              "title": "HP-LAUNDRY-06: Unauthenticated access to laundry redirects to auth",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3145,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:52.208Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "374fe5e0b608a1dc9af5-0722a340c1b14ce34bc1",
+              "file": "happy-path/jaihind-laundry.spec.ts",
+              "line": 68,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-maintenance.spec.ts",
+      "file": "happy-path/jaihind-maintenance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Maintenance",
+          "file": "happy-path/jaihind-maintenance.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-MAINTENANCE-01: Maintenance page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4489,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:16.241Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-46e40bbbe26ad10e153a",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-02: Maintenance data or empty state is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4372,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:16.349Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-b4be295f20f654db5520",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-03: Navigation from maintenance to other modules works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4390,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:16.390Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-ab8b388e408c6f0d0264",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-04: Add new maintenance request button is present if available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4363,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:20.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-b566229f1b4d68f93068",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-05: Maintenance page shows expenses or summary section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4317,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:20.734Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-9c25d521d5ff1ad03353",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-06: Maintenance page does not crash on load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:20.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-ee3d6033c69d20fa818f",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-01: Maintenance page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4487,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:55.231Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-d62c76dc7995f181b582",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-02: Maintenance data or empty state is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4357,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:55.359Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-1336882e9759846905a2",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-03: Navigation from maintenance to other modules works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4344,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:55.487Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-93e5cb3005a3d7ab089f",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-04: Add new maintenance request button is present if available",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4548,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:59.720Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-bc4a5dc7e16cbf323551",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-05: Maintenance page shows expenses or summary section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4490,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:59.722Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-bbc1ad10482092db8c5a",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "HP-MAINTENANCE-06: Maintenance page does not crash on load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4385,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:27:59.836Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37b45d6beb001855d6ff-64d0927c2019b1426e28",
+              "file": "happy-path/jaihind-maintenance.spec.ts",
+              "line": 71,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-rent-details.spec.ts",
+      "file": "happy-path/jaihind-rent-details.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Rent Details",
+          "file": "happy-path/jaihind-rent-details.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-RENT-DETAILS-01: Rent Details page loads successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4673,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:25.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-b3d38ff1d67d9d85eef4",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-02: Page shows correct heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4649,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:25.058Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-e39c96c62486469af0e1",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-03: Page shows room-wise rent register description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4609,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:25.093Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-630855f625bf80660e8d",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-04: Select Room dropdown is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4393,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:29.707Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-f009ee4d25f6732aced8",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-05: Default state shows select a room prompt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4341,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:29.712Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-9246a1740e1024158398",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 52,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-06: Navigation from rent details to dashboard works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4379,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:29.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-78644e7e3d3fad300303",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 60,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-01: Rent Details page loads successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4779,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:04.218Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-b1609a0c2a8deab36628",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-02: Page shows correct heading",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4864,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:04.226Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-d55ea6ed05b72e86a124",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-03: Page shows room-wise rent register description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4738,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:04.274Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-7388823d5c9c6e696157",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-04: Select Room dropdown is visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4663,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:09.003Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-f3596c52d4bf7346a987",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-05: Default state shows select a room prompt",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4679,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:09.016Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-465ededca371674721c0",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 52,
+              "column": 7
+            },
+            {
+              "title": "HP-RENT-DETAILS-06: Navigation from rent details to dashboard works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4760,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:09.095Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8250f057c67262d9f999-ad7f445835e617c82dce",
+              "file": "happy-path/jaihind-rent-details.spec.ts",
+              "line": 60,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "happy-path/jaihind-rooms.spec.ts",
+      "file": "happy-path/jaihind-rooms.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "HP — Rooms",
+          "file": "happy-path/jaihind-rooms.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP-ROOMS-01: Rooms page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5658,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:34.060Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-e412780ce780e20eced8",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-02: Room data or empty state is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5706,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:34.106Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-ba2b8d065f3b101783c1",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-03: Room entries show type and location info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5612,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:34.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-b58b3b7819e65bd4aefa",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-04: Undo Checkout button is conditionally present for vacant rooms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No recently checked-out rooms — Undo Checkout not shown",
+                      "location": {
+                        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rooms.spec.ts",
+                        "line": 62,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 4403,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:39.723Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "No recently checked-out rooms — Undo Checkout not shown",
+                          "location": {
+                            "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rooms.spec.ts",
+                            "line": 62,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-d3eb19b203eac0a2fcf2",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-05: Room status labels are visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:39.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-67f492fae0d5519acd5c",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-06: Navigation from rooms to dashboard works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4331,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:26:39.816Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-f00eb2d7b252ecb07734",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 76,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-01: Rooms page loads successfully after login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:13.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-59b00c39900d40e1d514",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-02: Room data or empty state is displayed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4340,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:13.701Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-65c8b13754ccc2e07ea5",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-03: Room entries show type and location info",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4209,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:13.861Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-57b5782ca131e3e00db9",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-04: Undo Checkout button is conditionally present for vacant rooms",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No recently checked-out rooms — Undo Checkout not shown",
+                      "location": {
+                        "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rooms.spec.ts",
+                        "line": 62,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 4705,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:18.045Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "No recently checked-out rooms — Undo Checkout not shown",
+                          "location": {
+                            "file": "/Users/murugamachine/Development/agentic-ai-projects/web-automation/jaihind-ui-testing/tests/happy-path/jaihind-rooms.spec.ts",
+                            "line": 62,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-6ef873543ef35a52320b",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-05: Room status labels are visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4473,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:18.074Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-05c3bc2af4d68df836e5",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "HP-ROOMS-06: Navigation from rooms to dashboard works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4959,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-03T11:28:18.104Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b2c9ef54caee2571075c-d92e9e53926bb7e6f011",
+              "file": "happy-path/jaihind-rooms.spec.ts",
+              "line": 76,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-03T11:25:01.392Z",
+    "duration": 201701.688,
+    "expected": 124,
+    "skipped": 6,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

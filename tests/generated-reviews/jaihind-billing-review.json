@@ -1,0 +1,48 @@
+{
+  "module": "Billing",
+  "overallScore": 6,
+  "approved": false,
+  "issues": [
+    {
+      "severity": "critical",
+      "issue": "Test isolation failure: Tests modify state (HP-BILLING-04 creates a bill) but do not clean up, causing flakiness in HP-BILLING-05 (expects empty state) and HP-BILLING-02/06.",
+      "fix": "Implement a test.afterEach hook to delete created bills or use unique test data prefixes that can be filtered/deleted. Alternatively, mock the API responses to return deterministic states."
+    },
+    {
+      "severity": "warning",
+      "issue": "Inefficient login flow: test.beforeEach performs a full UI login for every single test, which is slow and brittle.",
+      "fix": "Use Playwright's storageState to save an authenticated session once and reuse it via test.use({ storageState: 'auth.json' }) or test.extend."
+    },
+    {
+      "severity": "warning",
+      "issue": "Overuse of networkidle: Using waitForLoadState('networkidle') is generally discouraged as it waits for all network connections to be idle, which can hang if there are background heartbeats.",
+      "fix": "Replace with waitForLoadState('domcontentloaded') or 'load', and use specific assertions (e.g., expect(locator).toBeVisible()) to wait for relevant content."
+    },
+    {
+      "severity": "warning",
+      "issue": "Ambiguous locator in HP-BILLING-04: page.locator('select').selectOption(...) uses a generic CSS selector instead of role-based locator.",
+      "fix": "Use page.getByRole('combobox') or page.getByLabel('Lodger') to select the lodger."
+    },
+    {
+      "severity": "info",
+      "issue": "Redundant navigation: Each test navigates to /billing manually despite beforeEach likely leaving the user on a dashboard or auth page. If storageState is used, this might be redundant if tests are grouped differently.",
+      "fix": "Ensure navigation is necessary. If using storageState, the user might already be logged in, but page.goto is still needed to reach /billing."
+    },
+    {
+      "severity": "info",
+      "issue": "HP-BILLING-06 is not a valid test: It checks for table headers which are already checked in HP-BILLING-02. It does not actually verify the 'overlapping billing periods' edge case.",
+      "fix": "Rewrite HP-BILLING-06 to specifically create two bills with overlapping dates and assert that the system handles it correctly (e.g., prevents creation or merges them)."
+    }
+  ],
+  "missingCoverage": [
+    "Error handling for invalid bill generation (e.g., missing lodger)",
+    "Pagination or loading more bills if history is long",
+    "Bill payment simulation and status update verification",
+    "Export/Download bill functionality"
+  ],
+  "strengths": [
+    "Consistent use of getByRole and getByText for locators",
+    "Clear test IDs (HP-BILLING-XX) mapping to requirements",
+    "Separation of concerns with dotenv configuration"
+  ]
+}

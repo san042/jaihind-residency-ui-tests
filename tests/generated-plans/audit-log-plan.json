@@ -1,0 +1,112 @@
+{
+  "module": "Audit Log",
+  "route": "/audit-log",
+  "testCases": [
+    {
+      "id": "HP-AUDIT-LOG-01",
+      "title": "Page loads successfully with correct header and title",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "User navigates to /audit-log"
+      ],
+      "steps": [
+        "Navigate to https://jaihindresidency.lovable.app/audit-log",
+        "Verify page header displays 'Audit Log'",
+        "Verify breadcrumb shows correct navigation path"
+      ],
+      "expectedResult": "Audit Log page loads successfully with header, title, and breadcrumb rendered correctly"
+    },
+    {
+      "id": "HP-AUDIT-LOG-02",
+      "title": "Audit log table displays recent activity entries with correct fields",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Audit log contains system activity data"
+      ],
+      "steps": [
+        "Navigate to /audit-log",
+        "Verify table displays columns: Timestamp, User, Action, Details",
+        "Inspect first row and verify timestamp format is readable",
+        "Verify user role and action type are displayed correctly"
+      ],
+      "expectedResult": "Audit log table renders with all required columns populated and data displayed accurately for recent entries"
+    },
+    {
+      "id": "HP-AUDIT-LOG-03",
+      "title": "Pagination controls allow navigation between log entries",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Audit log contains more than one page of entries"
+      ],
+      "steps": [
+        "Navigate to /audit-log",
+        "Verify pagination controls are visible at bottom of table",
+        "Click 'Next' page button",
+        "Verify page URL or state updates to reflect new page",
+        "Click 'Previous' page button",
+        "Verify entries from previous page are displayed"
+      ],
+      "expectedResult": "Pagination functions correctly with entries updating on page change and controls remaining accessible"
+    },
+    {
+      "id": "HP-AUDIT-LOG-04",
+      "title": "Date range filter allows narrowing audit log entries",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Audit log contains entries spanning multiple dates"
+      ],
+      "steps": [
+        "Navigate to /audit-log",
+        "Locate date range filter controls",
+        "Set start date to a specific past date",
+        "Set end date to today",
+        "Click 'Apply Filter'",
+        "Verify table refreshes with only entries within selected range"
+      ],
+      "expectedResult": "Filter applies correctly and table displays only audit entries matching the selected date range"
+    },
+    {
+      "id": "HP-AUDIT-LOG-05",
+      "title": "Empty state displays when no audit log entries exist",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in as Employee",
+        "Audit log table is empty (no entries)"
+      ],
+      "steps": [
+        "Navigate to /audit-log",
+        "Verify table area shows empty state message",
+        "Verify appropriate illustration or icon is displayed",
+        "Verify no empty table rows are rendered"
+      ],
+      "expectedResult": "Empty state message is displayed clearly with no table rows shown when no audit entries exist"
+    },
+    {
+      "id": "EP-AUDIT-LOG-06",
+      "title": "Unauthorized user accessing audit log is redirected to login",
+      "type": "edge-case",
+      "priority": "high",
+      "preconditions": [
+        "User is NOT logged in",
+        "User attempts to access protected route"
+      ],
+      "steps": [
+        "Open browser in incognito window",
+        "Navigate directly to https://jaihindresidency.lovable.app/audit-log",
+        "Verify automatic redirect occurs",
+        "Verify redirect destination is /auth",
+        "Verify login form displays with email and password fields"
+      ],
+      "expectedResult": "Unauthenticated user is redirected to /auth login page and cannot access audit log without valid credentials"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "module": "Laundry",
+  "route": "/laundry",
+  "testCases": [
+    {
+      "id": "HP-LAUNDRY-01",
+      "title": "Successful page load after authentication",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in via /auth with valid email and password",
+        "User has Employee role"
+      ],
+      "steps": [
+        "Navigate to https://jaihindresidency.lovable.app/laundry",
+        "Verify page loads without errors",
+        "Confirm header displays 'Laundry' or equivalent title"
+      ],
+      "expectedResult": "Laundry page loads successfully with no 401/403 errors, header visible, and content area renders"
+    },
+    {
+      "id": "HP-LAUNDRY-02",
+      "title": "Laundry records display with guest and room association",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in",
+        "At least one laundry record exists in the system"
+      ],
+      "steps": [
+        "Navigate to /laundry",
+        "Locate the laundry records table/list",
+        "Inspect a record row for guest name, room number, items, status, and charges"
+      ],
+      "expectedResult": "Records display correctly showing guest name, room number, laundry items, current status (e.g., Pending, In Progress, Completed), and associated charges"
+    },
+    {
+      "id": "HP-LAUNDRY-03",
+      "title": "Navigation to guest detail from laundry record",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "Laundry records with guest links are displayed"
+      ],
+      "steps": [
+        "Navigate to /laundry",
+        "Click on a guest name or room number within a laundry record",
+        "Verify browser navigates to the guest detail page"
+      ],
+      "expectedResult": "User is redirected to the guest detail page with the correct guest/room context and laundry information is visible or linked"
+    },
+    {
+      "id": "HP-LAUNDRY-04",
+      "title": "Update laundry status from Pending to Completed",
+      "type": "happy-path",
+      "priority": "high",
+      "preconditions": [
+        "User is logged in",
+        "A laundry record exists with status 'Pending'"
+      ],
+      "steps": [
+        "Navigate to /laundry",
+        "Locate the 'Pending' laundry record",
+        "Click the status dropdown or update button",
+        "Select 'Completed' from status options",
+        "Confirm the update action"
+      ],
+      "expectedResult": "Status changes to 'Completed', page reflects the updated status, and any calculated charges are finalized"
+    },
+    {
+      "id": "HP-LAUNDRY-05",
+      "title": "Empty state display when no laundry records exist",
+      "type": "happy-path",
+      "priority": "medium",
+      "preconditions": [
+        "User is logged in",
+        "No laundry records exist in the system"
+      ],
+      "steps": [
+        "Navigate to /laundry",
+        "Observe the content area"
+      ],
+      "expectedResult": "Page displays an empty state message (e.g., 'No laundry records found') with an option to create a new record"
+    },
+    {
+      "id": "HP-LAUNDRY-06",
+      "title": "Unauthorized access to /laundry without login",
+      "type": "edge-case",
+      "priority": "high",
+      "preconditions": [
+        "User is NOT logged in"
+      ],
+      "steps": [
+        "Navigate directly to https://jaihindresidency.lovable.app/laundry"
+      ],
+      "expectedResult": "User is redirected to /auth login page and cannot access the laundry module without valid credentials"
+    }
+  ]
+}
