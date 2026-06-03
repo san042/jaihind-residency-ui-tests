@@ -8,8 +8,13 @@ import * as path from 'path';
  */
 
 const resultsPath = path.resolve(__dirname, '../reports/results.json');
-const reportPath  = path.resolve(__dirname, '../reports/test-report.html');
-const csvPath     = path.resolve(__dirname, '../reports/test-report.csv');
+const now          = new Date();
+const dd           = String(now.getDate()).padStart(2, '0');
+const mm           = String(now.getMonth() + 1).padStart(2, '0');
+const yyyy         = now.getFullYear();
+const runDateStamp = `${dd}${mm}${yyyy}`;
+const reportPath   = path.resolve(__dirname, `../reports/test-report-${runDateStamp}.html`);
+const csvPath      = path.resolve(__dirname, `../reports/test-report-${runDateStamp}.csv`);
 
 const data = JSON.parse(fs.readFileSync(resultsPath, 'utf-8'));
 
