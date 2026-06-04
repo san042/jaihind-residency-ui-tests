@@ -19,40 +19,8 @@ Automated UI testing for [Jaihind Residency](https://jaihindresidency.lovable.ap
 ---
 
 ## 🏗️ Project Structure
-jaihind-ui-testing/
-├── tests/
-│   ├── smoke/                    # Quick sanity checks (5 tests)
-│   │   └── jaihind-smoke.spec.ts
-│   ├── happy-path/               # Full functional tests (60 tests)
-│   │   ├── jaihind-auth.spec.ts
-│   │   ├── jaihind-dashboard.spec.ts
-│   │   ├── jaihind-rooms.spec.ts
-│   │   ├── jaihind-guests.spec.ts
-│   │   ├── jaihind-billing.spec.ts
-│   │   ├── jaihind-electricity.spec.ts
-│   │   ├── jaihind-maintenance.spec.ts
-│   │   ├── jaihind-laundry.spec.ts
-│   │   ├── jaihind-rent-details.spec.ts
-│   │   └── jaihind-audit-log.spec.ts
-│   ├── generated-plans/          # AI-generated test plans (oq6e-planner)
-│   └── generated-reviews/        # AI review reports (qwen-reviewer)
-├── pages/                        # Page Object Models (POM)
-│   ├── JaihindBasePage.ts
-│   ├── JaihindLoginPage.ts
-│   └── JaihindDashboardPage.ts
-├── fixtures/                     # Test data
-│   ├── jaihind-testData.json
-│   └── jaihind-users.json
-├── scripts/                      # Utility scripts
-│   ├── stage1-planner.ts         # oMLX test plan generator
-│   ├── stage2-coder.ts           # oMLX spec file generator
-│   ├── stage3-reviewer.ts        # oMLX spec reviewer
-│   ├── generate-report.ts        # HTML + CSV report generator
-│   └── inspect-*.ts              # DOM inspection scripts
-├── reports/                      # Generated reports (gitignored)
-├── playwright.config.ts
-├── package.json
-└── tsconfig.json
+<img width="599" height="683" alt="Screenshot 2026-06-04 at 4 31 19 PM" src="https://github.com/user-attachments/assets/866317c4-20a7-4977-82f4-c2c66f68e54f" />
+
 ---
 
 ## 🧪 Test Coverage
